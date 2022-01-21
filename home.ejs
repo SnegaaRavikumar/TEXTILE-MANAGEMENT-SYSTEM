@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background {
+  background: url("../images/mill.jpg");
+  border: 2px solid black;
+  position:absolute;
+  height: 288px;
+  left: 0px;
+  top: 0px;
+  width:100%
+}
+img {
+  border-radius: 50%;
+  width:250px;
+  height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+div.transbox {
+  margin: 0px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.8;
+  height: 288px;
+  
+} 
+div.transbox1 {
+  margin: 25px;
+  background-color: white;
+  border: 1px solid white;
+  margin-left: auto;
+  opacity: 0.9;
+  height: 70px;
+  position:absolute;
+  width:100%;
+} 
+.heading{
+  font-family: Georgia, serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+.heading1{
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-style: bold;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+.dropdown{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: black;
+  padding: 25px 50px;
+  text-decoration: none;
+}
+.body-content1{
+  position: absolute;
+  height: 390px;
+  width: 740px;
+  top: 200px;
+  left: 90px;
+  background-color: white;
+}
+.sidenav {
+  height: 500px;
+  width: 250px;
+  position: absolute;
+  top: 290px;
+  left: 0px;
+  background-color: grey;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black  ;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+.tbl-header{
+  background-color: grey;
+ }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.submit{
+  background-color: grey;
+  color:black;
+  padding: 14px 20px;
+  border: 1px solid grey;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.column {
+  float: left;
+  width: 28%;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;  
+  color: black
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(14, 0, 0, 0.856);
+  width: 370px;
+  margin: auto;
+  text-align: center;
+  font-family: Georgia, serif;
+  color:black;
+  background: linear-gradient(to bottom, white 0%, grey 100%);
+  align-items: center;
+  height: 260px;
+  justify-content: center;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+</style>
+</head>
+<body>
+<div class="background">
+<div class="transbox">
+<div class="transbox1"></div>
+<br><br><br><br><br><br><br><br>
+<div class="heading">Srinivasan Textile<br><div class="heading1">(Yarn & clothes)</div>
+</div></div></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</table>
+</div>
+<table style="position:absolute;top:8px;left:100px">
+  <tr>
+    <div class="dropdown-content">
+    <th><div class="dropdown"><i class="fa fa-home"> <a href="/customer/home">Home</a>
+  </th>
+    <th><div class="dropdown"><i class="fa fa-user"> <a href="/customer"> Customer</a>
+      
+    <th><div class="dropdown"><i class="fa fa-users"><a href="/admin/userrequestyarn"> Admin</a>
+   </th>
+   <th><div class="dropdown"><i class="fa fa-users"><a href="/employee/signup"> Employee</a>
+   </div>
+    </table>
+    <p>
+      <div class="row">
+        <div class="column"><div class="card">
+          <br>
+        <b>Yarn</b>
+        <br>
+        <h5>Varieties:Recycledcotton,
+          purecotton</h5>
+       
+        <h3>600 bags</h3>
+          </div></div>
+          <div class="column"><div class="card">
+            <br>
+            <b>Fabric</b>
+            <br>
+            <h5>Varieties:10's,20's,30's</h5>
+        
+            <h3>200 metres</h3>
+            </div></div>
+            <div class="column"><div class="card">
+              <br>
+              <b>Garments</b>
+              <br>
+              <h5>Varieties:sleep wear,casualwear,sportswear</h5>
+       
+              <h3>1200 pieces</h3>
+              </div></div>
+              </div>

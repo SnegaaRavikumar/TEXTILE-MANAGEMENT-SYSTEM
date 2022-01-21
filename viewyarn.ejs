@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/easyinvoice/dist/easyinvoice.min.js"></script>
+<title><%=pageTitle%></title>
+<style>
+div.background {
+  background: url("../images/mill.jpg");
+  border: 2px solid black;
+  position:absolute;
+  height: 275px;
+  left: 0px;
+  top: 0px;
+  width:100%
+}
+img {
+  
+  width:610px;
+  height:300px;
+  left: 45px;
+ 
+}
+div.transbox {
+  margin: 0px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.8;
+  height: 275px;
+  
+} 
+div.transbox1 {
+  margin: 25px;
+  background-color: white;
+  border: 1px solid white;
+  margin-left: auto;
+  opacity: 0.9;
+  height: 100px;
+  position:absolute;
+  width:100%;
+} 
+.heading{
+  font-family: Georgia, serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+.heading1{
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-style: bold;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(14, 0, 0, 0.856);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: Georgia, serif;
+  align-items: center;
+}
+input[type=text], input[type=password],textarea{
+  width: 150%;
+  padding: 12px 1px;
+  margin: 18px 10px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  box-shadow: 0 0 3pt 0.4pt #D3D3D3;
+  font-size: 16px;
+}
+ 
+</style>
+</head>
+<body>
+<div class="background">
+<div class="transbox">
+<div class="transbox1">
+<div class="heading"><br>YARN</div>
+</div></div></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="card">
+  <form>
+  <table>
+    <% if(yarns.length > 0){ %>
+      <% for (let yarn of yarns) { %>
+    <tr><td><b>Name:</td><td><input type="text" value="<%= yarn.name %>"></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+   
+    <tr><td><b> Email address:</td><td><input type="text" value="<%= yarn.email %>"></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+    
+    <tr><td><b> Phone number:</td><td><input type="text" value="<%= yarn.phone %>"></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+   
+    <tr><td><b> Company name:</td><td><input type="text" value="<%= yarn.company%> " id="company" id="company"></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td></td></tr>
+    <tr><td><b> Company Address:</td><td><input type="text" value="<%= yarn.address %>" id="address"></textarea></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr>
+    <tr><td><b>GST number:</td><td><input type="text" value="<%= yarn.gst%>" name="gst"></td><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr>
+    <tr><td><b>Pan number:</td><td><input type="text" value="<%= yarn.pan%>" name="pan"></td></tr>
+    <tr><td><b>Type of cotton:</td><td><input type="text" value="<%= yarn.cotton %>" id="cotton" name="cotton"></td></tr>
+    <tr><td><b>cottonpercentage:</td><td><input type="text" value="<%= yarn.cottonpercent %>"id="cottonpercent" name="cottonpercent"></td></tr>
+    <tr><td><b>Polyster number:</td><td><input type="text" value="<%= yarn.polysterpercent %>" name="polysterpercent"id="polysterpercent"></td></tr>
+    <tr><td><b>No.of.bags:</td><td><input type="text" value="<%= yarn.quantity %>" id="quantity"></td></tr>
+     <tr><td><b>Date of delivery:</td><td><input type="text" value="<%= yarn.date%>" name="date"></td></tr>
+      <tr><td><b>At regular intervals:</b></td><td><input type="text" value="<%= yarn.regular%>" id="regular" name="regular"></td></b></td></tr>
+  
+      <% } %>
+      <% } else {%>
+        <tr> <h1> No orders found </h1></tr>
+      <% } %>
+  
+    </table>
+  </form> 
+  
+  <button onclick="downloadInvoice()">Generate Bill</button>
+
+  
+  </div>
+  </body>
+  <script>
+function downloadInvoice()
+{
+  if(document.getElementById('regular').value!=0)
+{
+interval=(document.getElementById('regular').value)*4;
+console.log(interval);
+}
+else{
+  interval=1;
+}
+  var price=0;
+  var count=0;
+  var today=new Date();
+  if(document.getElementById('cotton').value=="Recycledcotton" && document.getElementById('cottonpercent').value=="75" && document.getElementById('polysterpercent').value=="25")
+  {
+    price=110;
+  }
+  else if(document.getElementById('cotton').value=="Recycledcotton" && document.getElementById('cottonpercent').value=="70" && document.getElementById('polysterpercent').value=="30")
+  {
+    price=145;
+  }
+  else if(document.getElementById('cotton').value=="Recycledcotton" && document.getElementById('cottonpercent').value=="60" && document.getElementById('polysterpercent').value=="40")
+  {
+    price=190;
+  }
+  if(document.getElementById('cotton').value=="Purecotton" && document.getElementById('cottonpercent').value=="75" && document.getElementById('polysterpercent').value=="25")
+  {
+    price=110;
+  }
+  else if(document.getElementById('cotton').value=="Purecotton" && document.getElementById('cottonpercent').value=="70" && document.getElementById('polysterpercent').value=="30")
+  {
+    price=145;
+  }
+  else if(document.getElementById('cotton').value=="Purecotton" && document.getElementById('cottonpercent').value=="60" && document.getElementById('polystercotton').value=="40")
+  {
+    price=190;
+  }
+  var data = { 
+    //"documentTitle": "RECEIPT", //Defaults to INVOICE
+    //"locale": "₹", //Defaults to en-US, used for number formatting (see docs)
+    "currency": "INR", //See documentation 'Locales and Currency' for more info
+    "taxNotation": "vat", //or gst
+    "marginTop": 25,
+    "marginRight": 25,
+    "marginLeft": 25,
+    "marginBottom": 25,
+    //"logo": "https://public.easyinvoice.cloud/img/logo_en_original.png", //or base64
+    "background": "https://public.easyinvoice.cloud/img/watermark-draft.jpg", //or base64 //img or pdf
+    "sender": {
+        "company": "Srinivasa Textiles", 
+        "address": "8/90 Thottasalaivedhi,vagarayampalayam",
+        "zip":"karumathapatti",
+        "city": "Coimbatore-641659",
+        "country": "India"
+        //"custom1": "custom value 1",
+        //"custom2": "custom value 2",
+        //"custom3": "custom value 3"
+    },
+    "client": {
+       	"company": document.getElementById('company').value,
+       	"address": document.getElementById('address').value,
+         "zip":"",
+         "city": "",
+        "country": "India"
+    },
+    "invoiceNumber": "2021.000"+(count+1),
+    "invoiceDate": String(today.getDate()) +"-" + String(today.getMonth())+"-"+String(today.getFullYear()),
+    "products": [
+        {
+            "quantity": document.getElementById('quantity').value*interval,
+            "description": "yarn(" + document.getElementById('cotton').value+" " + document.getElementById('cottonpercent').value+"%" + document.getElementById('polysterpercent').value +"%)",
+            "price": price,
+           "tax":0
+        }
+    ],
+  
+    "bottomNotice": "Kindly pay 50 % of amount as your advance",
+    //Used for translating the headers to your preferred language
+    //Defaults to English. Below example is translated to Dutch
+    "translate": { 
+    //     "invoiceNumber": "Factuurnummer",
+    //     "invoiceDate": "Factuurdatum",
+    //     "products": "Producten", 
+       "quantity": "Quantity(in bags)", 
+        "price": "Price(inRs)",
+        "subtotal":"Subtotal(inRs)",
+         "total": "Total(inRs)" 
+     }
+};
+easyinvoice.createInvoice(data, function (result) {
+    easyinvoice.download('yarn.pdf', result.pdf);
+//Create your invoice! Easy!
+});
+}
+    </script>
+ 
