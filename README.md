@@ -40,8 +40,8 @@ Software Requirements :
 These are the main goals of this module 
 
 	- Customer can login by using email address or phone number
-
-        - The  customers profile enhancement, checking of their previous orders and communication with admin will be maintained in the dashboard.
+	
+	- The  customers profile enhancement, checking of their previous orders and communication with admin will be maintained in the dashboard.
 
 These are the scripting languages and environment used in this module 
 
