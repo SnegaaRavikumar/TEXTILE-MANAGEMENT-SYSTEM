@@ -60,10 +60,10 @@ These are the scripting languages and environment used in this module
 These are the main goals of this module 
 
 	- Customers can place their orders in various products like yarn, fabric and garments.
-
-        - In order processing, the acceptance is made by the admin after the order information  are redirected.
-
-        - With the respective information of customer and orders, an invoice will be generated in systematic format.
+	
+	- In order processing, the acceptance is made by the admin after the order information  are redirected. 
+	
+	- With the respective information of customer and orders, an invoice will be generated in systematic format.
 
 These are the scripting languages and environment used in this module 
 
@@ -81,13 +81,13 @@ These are the scripting languages and environment used in this module
 
 These are the main goals of this module
 
-	- Stock management – Details about the raw materials like cotton, polyster and  wastages are managed.
-
-        - Reorder level –  Checking of reorder level will help in the stock updation.
-
-        - Production level – Details about the production level of yarn, fabric and garments are managed
-
-        - Sales management – The daily sales level are updated by the admin
+	- Stock management – Details about the raw materials like cotton, polyster and  wastages are managed. 
+	
+	- Reorder level –  Checking of reorder level will help in the stock updation.
+	
+	- Production level – Details about the production level of yarn, fabric and garments are managed
+	
+	- Sales management – The daily sales level are updated by the admin
 
 These are the scripting languages and environment used in this module 
 
@@ -106,12 +106,12 @@ These are the scripting languages and environment used in this module
 These are the main goals of this module
 
 	- Employee Registration – Employee can register by giving their personal details
-
-        - Login – Employee can login by using email address or phone number 
-
-        - Employee details like their salary, provident fund are managed by Admin.
-
-        - Employee can login and view his/her salary details including  working hours etc…
+	
+	- Login – Employee can login by using email address or phone number 
+	
+	- Employee details like their salary, provident fund are managed by Admin.
+	
+	- Employee can login and view his/her salary details including  working hours etc…
 
 These are the scripting languages and environment used in this module 
 
